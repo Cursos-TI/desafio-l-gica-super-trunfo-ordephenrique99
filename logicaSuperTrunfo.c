@@ -112,12 +112,14 @@ int main(){
         printf("Carta 2 %s venceu!\n", nomeCid2);       //Caso carta 2 for maior valor apresenta mensagem de vencedor
     }
 
-    printf("Escolha qual atributo você deseja comparar:\n");
-    printf("OPÇÂO 1 - POPULAÇÃO\n");
-    printf("OPÇÃO 2 - ÁREA\n");
-    printf("OPÇÃO 3 - PIB\n");
-    printf("OPÇÃO 4 - PONTOS TURÍSTICOS\n");
-    printf("OPÇÃO 5 - DENSIDADE DEMOGRÁFICA\n");
+    printf("\n\n");
+    printf("##OPÇÂO 1 - POPULAÇÃO\n");
+    printf("##OPÇÃO 2 - ÁREA\n");
+    printf("##OPÇÃO 3 - PIB\n");
+    printf("##OPÇÃO 4 - PONTOS TURÍSTICOS\n");
+    printf("##OPÇÃO 5 - DENSIDADE DEMOGRÁFICA\n");
+    printf("\nEscolha qual atributo você deseja comparar: ");
+    scanf("%d", &opcao);
 
     switch (opcao){
     case 1:
