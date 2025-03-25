@@ -172,7 +172,7 @@ int main(){
  
         if(pTur1>pTur2){
             printf("Carta 1 - %s venceu!\n", nomeCid1);
-        }else if(pTur2>pTur1{
+        }else if(pTur2>pTur1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
         }else{
             printf("HOUVE EMPATE!\n");
@@ -180,13 +180,22 @@ int main(){
     break;
     case 5:
         printf("Comparando DENSIDADE DEMOGRÁFICA\n");
-        
-        break;        
+        printf("\nCARTA 01 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid1, densPopul1);
+        printf("\nCARTA 02 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid2, densPopul2);
+        printf("\n\n");
+ 
+        if(densPopul1<densPopul2){
+            printf("Carta 1 - %s venceu!\n", nomeCid1);
+        }else if(densPopul2<densPopul1){
+            printf("Carta 2 - %s venceu!\n", nomeCid2);
+        }else{
+            printf("HOUVE EMPATE!\n");
+        }
+    break; 
     default:
-
-        break;
+        printf("OPÇÃO INVÁLIDA!\n\n");
+    break;
     }
 
-  
     return 0;
 }
