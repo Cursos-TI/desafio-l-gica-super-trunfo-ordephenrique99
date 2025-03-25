@@ -123,32 +123,61 @@ int main(){
 
     switch (opcao){
     case 1:
-        printf("Comparando POPULAÇÂO\n");
+        printf("\nComparando POPULAÇÂO\n");
         printf("\nCARTA 01 %s - POPULAÇÃO: %lu", nomeCid1, populacao1);
         printf("\nCARTA 02 %s - POPULAÇÃO: %lu", nomeCid2, populacao2);
+        printf("\n\n");
 
         if(populacao1>populacao2){
-            printf("Carta 1 %s venceu!\n", nomeCid1);
+            printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(populacao2>populacao1){
-            printf("Carta 2 %s venceu!\n", nomeCid2);
+            printf("Carta 2 - %s venceu!\n", nomeCid2);
         }else{
             printf("HOUVE EMPATE!\n");
         }
-
-        break;
+    break;
     case 2:
-         printf("Comparando ÁREA\n");
-
-
-        break;
+        printf("Comparando ÁREA\n");
+        printf("\nCARTA 01 %s - ÁREA: %f", nomeCid1, area1);
+        printf("\nCARTA 02 %s - ÁREA: %f", nomeCid2, area2);
+        printf("\n\n");
+ 
+        if(area1>area2){
+            printf("Carta 1 - %s venceu!\n", nomeCid1);
+        }else if(area2>area1){
+            printf("Carta 2 - %s venceu!\n", nomeCid2);
+        }else{
+            printf("HOUVE EMPATE!\n");
+        }
+    break;
     case 3:
          printf("Comparando PIB\n");
-
-        break;
+         printf("\nCARTA 01 %s - PIB: %f", nomeCid1, PIB1);
+         printf("\nCARTA 02 %s - PIB: %f", nomeCid2, PIB2);
+         printf("\n\n");
+ 
+        if(PIB1>PIB2){
+            printf("Carta 1 - %s venceu!\n", nomeCid1);
+        }else if(PIB2>PIB1){
+            printf("Carta 2 - %s venceu!\n", nomeCid2);
+        }else{
+            printf("HOUVE EMPATE!\n");
+        }
+    break;
     case 4:
         printf("Comparando PONTOS TURÍSTICOS\n");
-        
-        break;
+        printf("\nCARTA 01 %s - PONTOS TURÍSTICOS: %f", nomeCid1, pTur1);
+        printf("\nCARTA 02 %s - PONTOS TURÍSTICOS: %f", nomeCid2, pTur2);
+        printf("\n\n");
+ 
+        if(pTur1>pTur2){
+            printf("Carta 1 - %s venceu!\n", nomeCid1);
+        }else if(pTur2>pTur1{
+            printf("Carta 2 - %s venceu!\n", nomeCid2);
+        }else{
+            printf("HOUVE EMPATE!\n");
+        }
+    break;
     case 5:
         printf("Comparando DENSIDADE DEMOGRÁFICA\n");
         
