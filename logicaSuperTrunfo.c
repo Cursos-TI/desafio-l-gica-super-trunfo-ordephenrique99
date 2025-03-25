@@ -12,7 +12,7 @@ int main(){
     float densPopul1, densPopul2;               //váriaveis para armazenamento da Densidade Populacional.
     float PIBperCapita1, PIBperCapita2;         //váriaveis para armazenamento do PIB per Capita.
     float superPoder1, superPoder2;             //váriaveis para armazenamento do Super Poder.
-    int opcao;
+    int opcao;                                  //variavel para armazenamento da escolha da opção do swicth.
 
     //inicio da solicitação dos dados referente a 1ª carta.
     printf("Informe os dados da 1ª carta a seguir\n");
@@ -112,6 +112,7 @@ int main(){
         printf("Carta 2 %s venceu!\n", nomeCid2);       //Caso carta 2 for maior valor apresenta mensagem de vencedor
     }
 
+    //Impressão das opções do menu switch
     printf("\n\n");
     printf("##OPÇÂO 1 - POPULAÇÃO\n");
     printf("##OPÇÃO 2 - ÁREA\n");
@@ -119,16 +120,17 @@ int main(){
     printf("##OPÇÃO 4 - PONTOS TURÍSTICOS\n");
     printf("##OPÇÃO 5 - DENSIDADE DEMOGRÁFICA\n");
     printf("\nEscolha qual atributo você deseja comparar: ");
-    scanf("%d", &opcao);
+    scanf("%d", &opcao);        //recebendo e armazena o valor escolhido pelo usuário.
 
+    //inicio do switch com menu
     switch (opcao){
-    case 1:
-        printf("\nComparando POPULAÇÂO\n");
-        printf("\nCARTA 01 %s - POPULAÇÃO: %lu", nomeCid1, populacao1);
+    case 1:                                                                  //opção para comparação de população
+        printf("\nComparando POPULAÇÂO\n");                                  //impressão de dados referente as cartas
+        printf("\nCARTA 01 %s - POPULAÇÃO: %lu", nomeCid1, populacao1);         
         printf("\nCARTA 02 %s - POPULAÇÃO: %lu", nomeCid2, populacao2);
         printf("\n\n");
 
-        if(populacao1>populacao2){
+        if(populacao1>populacao2){                                //comparando atributos de cartas para definir vencedor
             printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(populacao2>populacao1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
@@ -137,12 +139,12 @@ int main(){
         }
     break;
     case 2:
-        printf("Comparando ÁREA\n");
-        printf("\nCARTA 01 %s - ÁREA: %f", nomeCid1, area1);
+        printf("Comparando ÁREA\n");                                    //opção para comparação de área
+        printf("\nCARTA 01 %s - ÁREA: %f", nomeCid1, area1);            //impressão de dados referente as cartas
         printf("\nCARTA 02 %s - ÁREA: %f", nomeCid2, area2);
         printf("\n\n");
  
-        if(area1>area2){
+        if(area1>area2){                                         //comparando atributos de cartas para definir vencedor
             printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(area2>area1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
@@ -151,12 +153,12 @@ int main(){
         }
     break;
     case 3:
-         printf("Comparando PIB\n");
-         printf("\nCARTA 01 %s - PIB: %f", nomeCid1, PIB1);
+         printf("Comparando PIB\n");                                        //opção para comparação de PIB
+         printf("\nCARTA 01 %s - PIB: %f", nomeCid1, PIB1);                 //impressão de dados referente as cartas
          printf("\nCARTA 02 %s - PIB: %f", nomeCid2, PIB2);
          printf("\n\n");
  
-        if(PIB1>PIB2){
+        if(PIB1>PIB2){                                            //comparando atributos de cartas para definir vencedor
             printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(PIB2>PIB1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
@@ -165,12 +167,12 @@ int main(){
         }
     break;
     case 4:
-        printf("Comparando PONTOS TURÍSTICOS\n");
-        printf("\nCARTA 01 %s - PONTOS TURÍSTICOS: %f", nomeCid1, pTur1);
+        printf("Comparando PONTOS TURÍSTICOS\n");                           //opção para comparação de pontos turisticos
+        printf("\nCARTA 01 %s - PONTOS TURÍSTICOS: %f", nomeCid1, pTur1);   //impressão de dados referente as cartas
         printf("\nCARTA 02 %s - PONTOS TURÍSTICOS: %f", nomeCid2, pTur2);
         printf("\n\n");
  
-        if(pTur1>pTur2){
+        if(pTur1>pTur2){                                           //comparando atributos de cartas para definir vencedor
             printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(pTur2>pTur1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
@@ -179,12 +181,12 @@ int main(){
         }
     break;
     case 5:
-        printf("Comparando DENSIDADE DEMOGRÁFICA\n");
-        printf("\nCARTA 01 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid1, densPopul1);
+        printf("Comparando DENSIDADE DEMOGRÁFICA\n");                                   //opção para comparação de Densidade Demográfica
+        printf("\nCARTA 01 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid1, densPopul1);      //impressão de dados referente as cartas
         printf("\nCARTA 02 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid2, densPopul2);
         printf("\n\n");
  
-        if(densPopul1<densPopul2){
+        if(densPopul1<densPopul2){                                 //comparando atributos de cartas para definir vencedor
             printf("Carta 1 - %s venceu!\n", nomeCid1);
         }else if(densPopul2<densPopul1){
             printf("Carta 2 - %s venceu!\n", nomeCid2);
@@ -192,7 +194,7 @@ int main(){
             printf("HOUVE EMPATE!\n");
         }
     break; 
-    default:
+    default:                        //caso o valor escolhido esteja fora do paramentro entrara nesse caso onde encerra.
         printf("OPÇÃO INVÁLIDA!\n\n");
     break;
     }
