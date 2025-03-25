@@ -140,8 +140,8 @@ int main(){
     break;
     case 2:
         printf("Comparando ÁREA\n");                                    //opção para comparação de área
-        printf("\nCARTA 01 %s - ÁREA: %f", nomeCid1, area1);            //impressão de dados referente as cartas
-        printf("\nCARTA 02 %s - ÁREA: %f", nomeCid2, area2);
+        printf("\nCARTA 01 %s - ÁREA: %.2f", nomeCid1, area1);            //impressão de dados referente as cartas
+        printf("\nCARTA 02 %s - ÁREA: %.2f", nomeCid2, area2);
         printf("\n\n");
  
         if(area1>area2){                                         //comparando atributos de cartas para definir vencedor
@@ -154,8 +154,8 @@ int main(){
     break;
     case 3:
          printf("Comparando PIB\n");                                        //opção para comparação de PIB
-         printf("\nCARTA 01 %s - PIB: %f", nomeCid1, PIB1);                 //impressão de dados referente as cartas
-         printf("\nCARTA 02 %s - PIB: %f", nomeCid2, PIB2);
+         printf("\nCARTA 01 %s - PIB: %.2f", nomeCid1, PIB1);                 //impressão de dados referente as cartas
+         printf("\nCARTA 02 %s - PIB: %.2f", nomeCid2, PIB2);
          printf("\n\n");
  
         if(PIB1>PIB2){                                            //comparando atributos de cartas para definir vencedor
@@ -168,8 +168,8 @@ int main(){
     break;
     case 4:
         printf("Comparando PONTOS TURÍSTICOS\n");                           //opção para comparação de pontos turisticos
-        printf("\nCARTA 01 %s - PONTOS TURÍSTICOS: %f", nomeCid1, pTur1);   //impressão de dados referente as cartas
-        printf("\nCARTA 02 %s - PONTOS TURÍSTICOS: %f", nomeCid2, pTur2);
+        printf("\nCARTA 01 %s - PONTOS TURÍSTICOS: %d", nomeCid1, pTur1);   //impressão de dados referente as cartas
+        printf("\nCARTA 02 %s - PONTOS TURÍSTICOS: %d", nomeCid2, pTur2);
         printf("\n\n");
  
         if(pTur1>pTur2){                                           //comparando atributos de cartas para definir vencedor
@@ -182,8 +182,8 @@ int main(){
     break;
     case 5:
         printf("Comparando DENSIDADE DEMOGRÁFICA\n");                                   //opção para comparação de Densidade Demográfica
-        printf("\nCARTA 01 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid1, densPopul1);      //impressão de dados referente as cartas
-        printf("\nCARTA 02 %s - DENSIDADE DEMOGRÁFICA: %f", nomeCid2, densPopul2);
+        printf("\nCARTA 01 %s - DENSIDADE DEMOGRÁFICA: %.2f", nomeCid1, densPopul1);      //impressão de dados referente as cartas
+        printf("\nCARTA 02 %s - DENSIDADE DEMOGRÁFICA: %.2f", nomeCid2, densPopul2);
         printf("\n\n");
  
         if(densPopul1<densPopul2){                                 //comparando atributos de cartas para definir vencedor
