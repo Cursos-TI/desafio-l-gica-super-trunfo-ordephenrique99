@@ -12,6 +12,7 @@ int main(){
     float densPopul1, densPopul2;               //váriaveis para armazenamento da Densidade Populacional.
     float PIBperCapita1, PIBperCapita2;         //váriaveis para armazenamento do PIB per Capita.
     float superPoder1, superPoder2;             //váriaveis para armazenamento do Super Poder.
+    int opcao;
 
     //inicio da solicitação dos dados referente a 1ª carta.
     printf("Informe os dados da 1ª carta a seguir\n");
@@ -110,6 +111,51 @@ int main(){
     else{                                                           
         printf("Carta 2 %s venceu!\n", nomeCid2);       //Caso carta 2 for maior valor apresenta mensagem de vencedor
     }
+
+    printf("Escolha qual atributo você deseja comparar:\n");
+    printf("OPÇÂO 1 - POPULAÇÃO\n");
+    printf("OPÇÃO 2 - ÁREA\n");
+    printf("OPÇÃO 3 - PIB\n");
+    printf("OPÇÃO 4 - PONTOS TURÍSTICOS\n");
+    printf("OPÇÃO 5 - DENSIDADE DEMOGRÁFICA\n");
+
+    switch (opcao){
+    case 1:
+        printf("Comparando POPULAÇÂO\n");
+        printf("\nCARTA 01 %s - POPULAÇÃO: %lu", nomeCid1, populacao1);
+        printf("\nCARTA 02 %s - POPULAÇÃO: %lu", nomeCid2, populacao2);
+
+        if(populacao1>populacao2){
+            printf("Carta 1 %s venceu!\n", nomeCid1);
+        }else if(populacao2>populacao1){
+            printf("Carta 2 %s venceu!\n", nomeCid2);
+        }else{
+            printf("HOUVE EMPATE!\n");
+        }
+
+        break;
+    case 2:
+         printf("Comparando ÁREA\n");
+
+
+        break;
+    case 3:
+         printf("Comparando PIB\n");
+
+        break;
+    case 4:
+        printf("Comparando PONTOS TURÍSTICOS\n");
+        
+        break;
+    case 5:
+        printf("Comparando DENSIDADE DEMOGRÁFICA\n");
+        
+        break;        
+    default:
+
+        break;
+    }
+
   
     return 0;
 }
